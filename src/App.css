@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+  /* font-family: "Noto Sans JP", "Cabin", sans-serif; */
+}
+
+.css-3xtt7o {
+  font-family: "Inter", "Cabin", sans-serif !important;
+}
+.priceNum {
+  font-family: "Inter", "Cabin", sans-serif !important;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* font強制サイズ変更class */
+.fontSpS {
+  font-size: 7px !important;
+}
+.fontSpXs {
+  font-size: 4px !important;
+}
+
+/* Buttonスタイリングのためのclass */
+/* ハンバーガーボタンのデザインclass */
+.css-onkibi {
+  width: 2em !important;
+  height: 2em !important;
+}
+
+/* tableの制限解除class */
+table {
+  border-collapse: separate !important;
+}
+
+/* Price Plan Page のスカラーシップカラーの強制class */
+.blueImportant {
+  color: #1a40c6 !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Heroスライダーの表示、非表示のclass */
+.show {
+  opacity: 1 !important;
+}
+
+/* ユーザーインタビューのコンテンツBgColorのためのclass */
+.addInterviewPurple {
+  background: #efe9f1;
+}
+.addInterviewBeige {
+  background: #f0eae6;
+}
+
+/* レスポンシブのためのclass */
+.brDisplay {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .brDisplay {
+    display: block;
+  }
+}
+/* text-alignの強制class */
+.textLeft {
+  text-align: left !important;
+}
+/* .wesupportyou {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 800;
+  font-size: 46px;
+} */
+
+/* .navHover {
+  padding: 8px;
+  transition: "all 0.3s";
+  font-size: 16px;
+}
+.navHover:hover {
+  cursor: pointer;
+  transition: "all 0.3s";
+  color: "#fcfcfc";
+  transition: "all 0.3s";
+} */
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
