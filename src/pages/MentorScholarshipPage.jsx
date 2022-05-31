@@ -229,7 +229,14 @@ export const MentorScholarshipPage = () => {
             w={{ base: "100%", md: "48%" }}
             py={{ base: "20px", md: "0px" }}
           >
-            <Image src={IpadImage} maxH="697px" />
+            <Image
+              src={IpadImage}
+              maxH="697px"
+              mt="0"
+              mb="0"
+              mr="0"
+              ml="auto"
+            />
           </Box>
         </Flex>
 
@@ -277,7 +284,7 @@ export const MentorScholarshipPage = () => {
             py={{ base: "20px", md: "0px" }}
             px={{ base: "2", md: "0" }}
           >
-            <Image src={CommunityImage} maxH="697px" w="100%" />
+            <Image src={CommunityImage} maxH="697px" maxW="667px" w="100%" />
           </Box>
         </Flex>
       </Box>

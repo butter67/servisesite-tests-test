@@ -26,7 +26,6 @@ import DotsBg from "../icons/DotsObjBg.svg";
 import RectGradation from "../imgs/RectangleGrade.png";
 
 export const HeroMain = memo(() => {
-  console.log("HeroMainレンダリング！");
   // Hero Slider function
   const changeImages = () => {
     const target1 = document.querySelector(".slideImage1");
@@ -39,35 +38,29 @@ export const HeroMain = memo(() => {
       } else if (target2.classList.contains("show")) {
         target2.classList.remove("show");
         target3.classList.add("show");
-      } else if (target3.classList.contains("show")) {
+      } else {
         target3.classList.remove("show");
         target1.classList.add("show");
-      } else {
-        return;
       }
+    } else {
+      return;
     }
-    return;
   };
-  const startCounting = () => {
-    setInterval(changeImages, 5000);
-  };
-  useEffect(() => {
-    startCounting();
-  });
 
-  // window.addEventListener("beforeunload", (startCounting) => {
-  //   startCounting.preventDefault();
-  // });
+  useEffect(() => {
+    const id = setInterval(changeImages, 6000);
+    return () => {
+      clearInterval(id);
+    };
+  }, []);
 
   //Count up timer function
-
   let totalSeconds = 0;
 
   function countUpTimer() {
     const timerTarget = document.getElementById("count_up_timer");
     if (timerTarget) {
       ++totalSeconds;
-      // console.log(totalSeconds);
       let hour = Math.floor(totalSeconds / 3600);
       let minute = Math.floor((totalSeconds - hour * 3600) / 60);
       let seconds = totalSeconds - (hour * 3600 + minute * 60);
@@ -75,14 +68,22 @@ export const HeroMain = memo(() => {
       if (minute < 10) minute = "0" + minute;
       if (seconds < 10) seconds = "0" + seconds;
       timerTarget.innerHTML = hour + "h" + minute + "min" + seconds + "s";
-    } else if (totalSeconds > 0) {
-      totalSeconds = 0;
     }
   }
 
   useEffect(() => {
-    setInterval(countUpTimer, 1000);
+    const count = setInterval(countUpTimer, 1000);
+    return () => {
+      clearInterval(count);
+    };
   });
+
+  // useEffect(() => {
+  //   const id = setInterval(changeImages, 6000);
+  //   return () => {
+  //     clearInterval(id);
+  //   };
+  // }, []);
 
   // Gsap function
   const obj = useRef();
