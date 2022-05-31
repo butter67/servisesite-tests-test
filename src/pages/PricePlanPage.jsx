@@ -153,7 +153,7 @@ export const PricePlanPage = () => {
                   <h3 mb={0}>Mentor</h3>
                   <Flex alignItems="baseline">
                     <Text fontSize="xl" fontWeight="bold">
-                      ￥29.800
+                      ￥29,800
                     </Text>
                     <Text fontSize="md" fontWeight="semibold">
                       /month
@@ -265,7 +265,7 @@ export const PricePlanPage = () => {
                       mr="8px"
                       fontSize="md"
                     >
-                      29.800
+                      29,800
                     </Text>
                     <Text fontSize="xl" color={"#1A40C6"}>
                       ￥０{" "}

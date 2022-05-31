@@ -47,7 +47,7 @@ export const UserInterview = (props) => {
 
         <Stack
           direction={{ base: "column", md: "row" }}
-          spacing={{ base: "60px", sm: "20px", lg: "50px" }}
+          spacing={{ base: "80px", sm: "20px", lg: "50px" }}
           justify="space-around"
         >
           {postsDatas.map((post, index) => {

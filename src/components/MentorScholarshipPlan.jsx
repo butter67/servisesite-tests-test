@@ -38,6 +38,7 @@ export const MentorScholarshipPlan = () => {
             alignItems={{ base: "center", lg: "baseline" }}
             maxW={{ base: "100%", lg: "380px" }}
             mt="24px"
+            mx="auto"
           >
             <Heading
               fontSize={{ base: "20px", md: "2xl" }}

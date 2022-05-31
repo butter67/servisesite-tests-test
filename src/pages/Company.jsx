@@ -1,21 +1,13 @@
-import { useState } from "react";
 import {
   Box,
   Heading,
   Container,
-  Button,
-  Input,
   Table,
   Text,
   Tbody,
   Tr,
   Td,
   TableContainer,
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-  Textarea,
 } from "@chakra-ui/react";
 import { useEffect } from "react";
 
@@ -34,7 +26,7 @@ export const Company = () => {
   };
 
   const moveToCompanySite = () => {
-    window.open("https://upacity.jp/", "_blank");
+    window.open("https://works.upacity.jp/", "_blank");
   };
 
   return (

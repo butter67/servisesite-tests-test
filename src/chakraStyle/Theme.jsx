@@ -48,7 +48,7 @@ export const Theme = extendTheme({
   },
   colors: {
     grayBg: "#fdfdfd",
-    mainGray: "#faf7f7",
+    mainGray: "#faf8f7",
     opaicGray: "#F7F7FA",
     pointCoral: "#F8665D",
     pointCoal2: "FF9190",

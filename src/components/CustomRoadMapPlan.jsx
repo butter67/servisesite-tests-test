@@ -40,7 +40,7 @@ export const CustomRoadMapPlan = () => {
               pos="absolute"
               top="-50px"
               left="-50px"
-              display={{ base: "none", md: "block" }}
+              display={{ base: "none", lg: "block" }}
             />
           </Flex>
 
@@ -49,6 +49,7 @@ export const CustomRoadMapPlan = () => {
             alignItems={{ base: "center", lg: "baseline" }}
             maxW={{ base: "100%", lg: "380px" }}
             mt="24px"
+            mx="auto"
           >
             <Heading
               fontSize={{ base: "20px", md: "2xl" }}

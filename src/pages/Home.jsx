@@ -13,6 +13,9 @@ import { MentorScholarshipPlan } from "../components/MentorScholarshipPlan";
 
 export const Home = (props) => {
   const postsData = props.posts;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

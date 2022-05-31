@@ -28,7 +28,7 @@ export const PricePlan = () => {
                   py={5}
                   px={5}
                   borderRight="1px"
-                  borderColor={"border"}
+                  borderColor={{ base: "white", md: "border" }}
                 >
                   <Heading fontSize="xl">Basic</Heading>
                   <Flex alignItems="baseline">
@@ -49,14 +49,14 @@ export const PricePlan = () => {
                 px={5}
                 borderTop="1px"
                 borderRight="1px"
-                borderColor={"border"}
+                borderColor={{ base: "white", md: "border" }}
               >
                 <Text>
                   個人の方の学習スケジュールの
                   <br />
                   作成と管理を無料でサポートします。
                 </Text>
-                <Wrap maxW="160px" mt={6}>
+                <Wrap maxW="180px" mt={6}>
                   <WrapItem alignItems={"center"}>
                     <Image src={check} alt="check" mr="10px" mb="-1" />
                     <Text>学習管理</Text>
@@ -80,7 +80,8 @@ export const PricePlan = () => {
             <Box
               w={{ base: "100%", md: "33.3%" }}
               py="30px"
-              borderColor={"border"}
+              borderTop="1px"
+              borderColor={{ base: "border", md: "white" }}
             >
               <Box>
                 <VStack
@@ -89,12 +90,13 @@ export const PricePlan = () => {
                   px={5}
                   // borderTop={{ base: "1px", md: "non" }}
                   borderRight="1px"
-                  borderColor={"border"}
+                  // borderColor={"border"}
+                  borderColor={{ base: "white", md: "border" }}
                 >
                   <Heading fontSize="xl">Mentor</Heading>
                   <Flex alignItems="baseline">
                     <Text fontSize="xl" fontWeight="bold">
-                      ￥29.800
+                      ￥29,800
                     </Text>
                     <Text fontSize="md" fontWeight="semibold">
                       /month
@@ -113,14 +115,14 @@ export const PricePlan = () => {
                 px={5}
                 borderTop="1px"
                 borderRight="1px"
-                borderColor={"border"}
+                borderColor={{ base: "white", md: "border" }}
               >
                 <Text>
                   技術就労を目指す方を
                   <br />
                   エンジニアがオンラインでサポート
                 </Text>
-                <Wrap maxW="160px" mt={6}>
+                <Wrap maxW="180px" mt={6}>
                   <WrapItem alignItems={"center"}>
                     <Image src={check} alt="check" mr="10px" mb="-1" />
                     <Text>学習管理</Text>
@@ -144,8 +146,8 @@ export const PricePlan = () => {
             <Box
               w={{ base: "100%", md: "33.3%" }}
               py="30px"
-              // borderTop={{ base: "1px", md: "non" }}
-              borderColor={"border"}
+              borderTop="1px"
+              borderColor={{ base: "border", md: "white" }}
             >
               <Box>
                 <VStack spacing={4} py={5} px={5}>
@@ -159,7 +161,7 @@ export const PricePlan = () => {
                       mr="8px"
                       fontSize="md"
                     >
-                      29.800
+                      29,800
                     </Text>
                     <Text fontSize="xl" color={"#1A40C6"}>
                       ￥０{" "}
@@ -180,14 +182,14 @@ export const PricePlan = () => {
                 py={5}
                 px={5}
                 borderTop="1px"
-                borderColor={"border"}
+                borderColor={{ base: "white", md: "border" }}
               >
                 <Text>
                   就職を目指す方の学習を
                   <br />
                   その結果までサポートします。
                 </Text>
-                <Wrap maxW="160px" mt={6}>
+                <Wrap maxW="180px" mt={6}>
                   <WrapItem alignItems={"center"}>
                     <Image src={check} alt="check" mr="10px" mb="-1" />
                     <Text>学習管理</Text>

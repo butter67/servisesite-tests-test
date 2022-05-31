@@ -257,7 +257,7 @@ export const LearningManagement = () => {
                 <Text fontSize="17px" fontWeight={"medium"} mb={5}>
                   学習の順序を決めるのって、最初は難しいですよね？
                   <br />
-                  大丈夫です。私たちのカスタムプラン機能で、おすすめの学習プランを提案します。
+                  大丈夫です。私たちのロードマッププラン機能で、おすすめの学習プランを提案します。
                 </Text>
 
                 <Link to="/learning-roadmap">

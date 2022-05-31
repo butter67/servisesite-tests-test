@@ -50,7 +50,7 @@ export const StudentsRecruitment = () => {
   return (
     <Box
       w="100%"
-      bg="pointCoral"
+      bg="navy"
       py={{ base: "14", md: "20" }}
       px={5}
       className="boshuSection"
@@ -61,12 +61,12 @@ export const StudentsRecruitment = () => {
           fontSize={{ base: "30px", md: "52px" }}
           fontFamily={"pop"}
           mb="0px"
-          color="#9AFC8F"
+          color="#fff"
           className="textTarget"
         >
           Mentor ・ Scholarship
         </Text>
-        <Text color="#9AFC8F" className="textTarget">
+        <Text color="#fcfcfc" className="textTarget">
           メンター・スカラーシッププラン
         </Text>
 
@@ -76,7 +76,7 @@ export const StudentsRecruitment = () => {
           justifyContent="center"
           fontWeight="600"
           fontFamily={"pop"}
-          color="#EDFF80"
+          color="#FFE9B1"
           className="textTarget"
         >
           <Text>{data && data[0].turn}</Text>
@@ -98,17 +98,17 @@ export const StudentsRecruitment = () => {
           mt="20px"
           className="textTarget"
         >
-          <Text color="Navy" mr="10px">
+          <Text color="red" mr="10px">
             *
           </Text>
-          <Text color="#EDFF80" fontSize={{ base: "14px", md: "16px" }}>
+          <Text color="#EDF0FF" fontSize={{ base: "14px", md: "16px" }}>
             {data && data[0].turn} {data && data[0].recruitstartyear}.
             {data && data[0].recruitstartmonth}-{data && data[0].recruitendyear}
             .{data && data[0].recruitendmonth}
           </Text>
         </Flex>
         <Button
-          variant={"pointBlue"}
+          variant={"orange"}
           fontSize="20px"
           mt="40px"
           fontWeight="600"

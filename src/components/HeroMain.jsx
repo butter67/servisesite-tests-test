@@ -26,6 +26,7 @@ import DotsBg from "../icons/DotsObjBg.svg";
 import RectGradation from "../imgs/RectangleGrade.png";
 
 export const HeroMain = memo(() => {
+  console.log("HeroMainレンダリング！");
   // Hero Slider function
   const changeImages = () => {
     const target1 = document.querySelector(".slideImage1");
@@ -45,19 +46,28 @@ export const HeroMain = memo(() => {
         return;
       }
     }
+    return;
   };
-
-  useEffect(() => {
+  const startCounting = () => {
     setInterval(changeImages, 5000);
+  };
+  useEffect(() => {
+    startCounting();
   });
 
+  // window.addEventListener("beforeunload", (startCounting) => {
+  //   startCounting.preventDefault();
+  // });
+
   //Count up timer function
+
   let totalSeconds = 0;
 
   function countUpTimer() {
     const timerTarget = document.getElementById("count_up_timer");
     if (timerTarget) {
       ++totalSeconds;
+      // console.log(totalSeconds);
       let hour = Math.floor(totalSeconds / 3600);
       let minute = Math.floor((totalSeconds - hour * 3600) / 60);
       let seconds = totalSeconds - (hour * 3600 + minute * 60);
@@ -65,8 +75,11 @@ export const HeroMain = memo(() => {
       if (minute < 10) minute = "0" + minute;
       if (seconds < 10) seconds = "0" + seconds;
       timerTarget.innerHTML = hour + "h" + minute + "min" + seconds + "s";
+    } else if (totalSeconds > 0) {
+      totalSeconds = 0;
     }
   }
+
   useEffect(() => {
     setInterval(countUpTimer, 1000);
   });
@@ -143,7 +156,7 @@ export const HeroMain = memo(() => {
           src={ellipseObj}
           maxW={{ base: "30px", md: "60px" }}
           top={{ base: "80px", md: "100px" }}
-          right={{ base: "0px", md: "100px" }}
+          right={{ base: "10px", md: "100px" }}
           pos="absolute"
           alt="ellipseObject"
           className="shape"
@@ -191,9 +204,9 @@ export const HeroMain = memo(() => {
           {/* 装飾Object */}
           <Image
             src={rectObj}
-            maxW={{ base: "40px", md: "170px" }}
+            maxW={{ base: "40px", md: "100px", lg: "160px" }}
             top={{ base: "-120px", md: "-100px" }}
-            left={{ base: "-10px", md: "-180px" }}
+            left={{ base: "-10px", md: "-10px", lg: "-150px" }}
             pos="absolute"
             alt="RectObject"
             className="shape"
@@ -301,7 +314,7 @@ export const HeroMain = memo(() => {
             alt="SetTheTimer"
             zIndex="1"
             className="shape"
-            display={{ base: "none", md: "block" }}
+            display={{ base: "none", lg: "block" }}
           />
 
           {/* Phone Moc Image */}
@@ -314,7 +327,7 @@ export const HeroMain = memo(() => {
             bgSize="contain"
             pos="absolute"
             bottom="0"
-            right="-20px"
+            right="-10px"
           >
             <Box
               w="70%"
