@@ -48,9 +48,9 @@ export const HeroMain = memo(() => {
   };
 
   useEffect(() => {
-    const id = setInterval(changeImages, 6000);
+    const timer = setInterval(changeImages, 6000);
     return () => {
-      clearInterval(id);
+      clearInterval(timer);
     };
   }, []);
 
@@ -77,13 +77,6 @@ export const HeroMain = memo(() => {
       clearInterval(count);
     };
   });
-
-  // useEffect(() => {
-  //   const id = setInterval(changeImages, 6000);
-  //   return () => {
-  //     clearInterval(id);
-  //   };
-  // }, []);
 
   // Gsap function
   const obj = useRef();
