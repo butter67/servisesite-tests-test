@@ -78,6 +78,7 @@ export const LearningManagement = () => {
                 fontSize={{ base: "19px", md: "24px" }}
                 fontFamily="noto"
                 fontWeight="600"
+                mb="20px"
               >
                 学習の管理
               </Heading>
@@ -112,6 +113,7 @@ export const LearningManagement = () => {
                 fontSize={{ base: "19px", md: "24px" }}
                 fontFamily="noto"
                 fontWeight="600"
+                mb="20px"
               >
                 学習時間の測定
               </Heading>
@@ -149,6 +151,7 @@ export const LearningManagement = () => {
                 fontSize={{ base: "19px", md: "24px" }}
                 fontFamily="noto"
                 fontWeight="600"
+                mb="20px"
               >
                 ノートの作成
               </Heading>
@@ -185,6 +188,7 @@ export const LearningManagement = () => {
                 fontSize={{ base: "19px", md: "24px" }}
                 fontFamily="noto"
                 fontWeight="600"
+                mb="20px"
               >
                 復習リマインダー
               </Heading>
@@ -222,6 +226,7 @@ export const LearningManagement = () => {
                 fontSize={{ base: "19px", md: "24px" }}
                 fontFamily="noto"
                 fontWeight="600"
+                mb="20px"
               >
                 レポートの作成
               </Heading>

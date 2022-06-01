@@ -3,15 +3,19 @@ import { useRef } from "react";
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   Button,
-  Text,
   Wrap,
   WrapItem,
+  Text,
+  Box,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { HamburgerIcon } from "@chakra-ui/icons";
@@ -19,11 +23,6 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 export const DrawerMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
-
-  const moveToCompanySite = () => {
-    window.open("https://upacity.jp/", "_blank");
-    onClose();
-  };
 
   const moveToUpacity = () => {
     window.open("https://app.upacity.jp/", "_blank");
@@ -70,6 +69,58 @@ export const DrawerMenu = () => {
               </WrapItem>
             </Wrap>
             <Wrap>
+              <WrapItem w="100%" justifyContent="center">
+                <Accordion allowMultiple w="100%">
+                  <AccordionItem border="none">
+                    <Box>
+                      <AccordionButton
+                        display="flex"
+                        justifyContent="center"
+                        py={4}
+                        _focus={{ outline: "none" }}
+                        pos="relative"
+                      >
+                        <Text fontWeight="600" color="white">
+                          機能
+                        </Text>
+
+                        <AccordionIcon
+                          color="white"
+                          pos="absolute"
+                          right={{ base: "38%", md: "44%" }}
+                        />
+                      </AccordionButton>
+                    </Box>
+                    <AccordionPanel pb="0" pt="0">
+                      <Wrap>
+                        <WrapItem
+                          w="100%"
+                          justifyContent="center"
+                          py={4}
+                          onClick={onClose}
+                          color="#DEC2E8"
+                        >
+                          <Link to="/learning-management">ベーシック機能</Link>
+                        </WrapItem>
+                      </Wrap>
+                      <Wrap>
+                        <WrapItem
+                          w="100%"
+                          justifyContent="center"
+                          py={4}
+                          onClick={onClose}
+                          color="#DEC2E8"
+                        >
+                          <Link to="/learning-roadmap">ロードマップ機能</Link>
+                        </WrapItem>
+                      </Wrap>
+                    </AccordionPanel>
+                  </AccordionItem>
+                </Accordion>
+                {/* <Text>Accodion</Text> */}
+              </WrapItem>
+            </Wrap>
+            {/* <Wrap>
               <WrapItem
                 w="100%"
                 justifyContent="center"
@@ -88,7 +139,7 @@ export const DrawerMenu = () => {
               >
                 <Link to="/learning-roadmap">ロードマップ機能</Link>
               </WrapItem>
-            </Wrap>
+            </Wrap> */}
             <Wrap>
               <WrapItem
                 w="100%"
