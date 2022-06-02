@@ -72,6 +72,7 @@ export const MentorScholarshipPage = () => {
         py={{ base: "20px", md: "40px" }}
         w={{ base: "96%", md: "80%" }}
       >
+        {/* Photo by Annie Spratt on Unsplash */}
         <Flex
           w="100%"
           alignItems="center"

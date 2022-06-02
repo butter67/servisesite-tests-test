@@ -3,7 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import axios from "axios";
-import { Box, Flex, Button, Text } from "@chakra-ui/react";
+import "animate.css";
+import { Box, Flex, Button, Text, transition } from "@chakra-ui/react";
 import bgImage from "../imgs/mentor-scholarship-page/bgPicture.png";
 
 export const StudentsRecruitment = () => {
@@ -60,6 +61,8 @@ export const StudentsRecruitment = () => {
       className="boshuSection"
       ref={objs}
     >
+      {/* Photo by Sigmund on Unsplash */}
+
       <Box color="white" fontFamily={"pop"}>
         <Text
           fontSize={{ base: "30px", md: "38px", lg: "52px" }}
@@ -115,12 +118,16 @@ export const StudentsRecruitment = () => {
         </Flex> */}
         <Button
           variant={"pointOrange"}
-          fontSize="20px"
+          size={"md"}
+          fontSize={{ base: "18px", md: "20px" }}
           mt="40px"
           fontWeight="600"
           className="buttonTarget"
           _hover={{
             cursor: "pointer",
+            transform: "scale(1.1,1.1)",
+            transition: "all .4s",
+            opacity: "0.98",
           }}
           _focus={{
             outline: "none",

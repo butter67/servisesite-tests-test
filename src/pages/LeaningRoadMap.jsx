@@ -432,7 +432,7 @@ export const LeaningRoadMap = () => {
             textAlign="center"
           >
             選択された言語の
-            {/* <br className="brDisplay" /> */}
+            <br diaplay={{ base: "block", md: "none" }} />
             学習ロードマップが
             <br className="brDisplay" />
             自動生成されます
@@ -445,9 +445,12 @@ export const LeaningRoadMap = () => {
           >
             学習したいコースを選択すると
             <br />
-            最適なオリジナルロードマップが自動生成されます。
+            最適なオリジナルロードマップが
+            <br diaplay={{ base: "block", md: "none" }} />
+            自動生成されます。
           </Text>
 
+          {/* Photo by Sergey Zolkin on Unsplash */}
           <Box maxW="780px" mx="auto">
             <Box
               className="roadmap-movie-container"
@@ -461,27 +464,7 @@ export const LeaningRoadMap = () => {
               backgroundRepeat="no-repeat"
               bgSize="cover"
             >
-              {/* <Image src={MovieBg} /> */}
-              {/* <Box
-              bgImage={MovieBg}
-              backgroundPosition="center"
-              backgroundRepeat="no-repeat"
-              bgSize="cover"
-              pb="70%"
-              borderRadius="20px"
-            > */}
-              {/* <Box>
-                <Text
-                  fontSize={{ base: "18px", md: "24px" }}
-                  color="gray.600"
-                  pos="absolute"
-                  top={{ base: "calc(50% - 13.5px)", md: "calc(50% - 18px)" }}
-                  left={{ base: "calc(50% - 63px)", md: "calc(50% - 84px)" }}
-                >
-                  ただいま開発中
-                </Text>
-              </Box> */}
-
+              {/* <Box> */}
               {/* <AspectRatio maxW="700px" ratio={4 / 3} mx="auto">
               <iframe
                 src="https://www.youtube.com/embed/n61ULEU7CO0"
@@ -497,7 +480,13 @@ export const LeaningRoadMap = () => {
         </Container>
       </Box>
 
-      <Box py={{ base: "10", md: "20" }} px="5" bg="grayBg">
+      {/* 開発中　非表示 */}
+      {/* <Box
+        py={{ base: "10", md: "20" }}
+        px="5"
+        bg="grayBg"
+        className="howToUseSection"
+      >
         <Container maxW={"1180px"} px={"0"}>
           <Flex
             justify="space-between"
@@ -541,7 +530,7 @@ export const LeaningRoadMap = () => {
             </Box>
           </Flex>
         </Container>
-      </Box>
+      </Box> */}
 
       <WeSupportYou />
     </Box>

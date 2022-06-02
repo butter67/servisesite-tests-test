@@ -25,21 +25,20 @@ export const Button = {
       fontSize: "m",
       width: "160px",
       height: "50px",
-      px: 4, // <-- px is short for paddingLeft and paddingRight
-      py: 3, // <-- py is short for paddingTop and paddingBottom
+      px: 4,
+      py: 3,
     },
     md: {
-      fontSize: "md",
-      // width: {{ base: "100px", md: "180px" }},
+      fontSize: ["m", "md"],
       width: "180px",
       height: "50px",
-      px: 6, // <-- these values are tokens from the design system
-      py: 4, // <-- these values are tokens from the design system
+      px: 6,
+      py: 4,
     },
     xl: {
       fontSize: "md",
       width: "180px",
-      px: 6, // <-- these values are tokens from the design system
+      px: 6,
       py: 4,
     },
     humSize: {
