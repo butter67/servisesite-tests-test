@@ -174,16 +174,16 @@ export const HeaderNav = () => {
           size={"sm"}
           display={{ base: "none", md: "block" }}
           variant={"orange"}
-          fontSize={{ base: "14px" }}
+          fontSize="18px"
           onClick={moveToUpacity}
         >
           Start App
         </Button>
         <Button
-          size={"s"}
+          // size={"s"}
           display={{ base: "block", md: "none" }}
           variant={"orange"}
-          fontSize={{ base: "14px" }}
+          fontSize="14px"
           onClick={moveToUpacity}
           _focus={{
             outline: "none",

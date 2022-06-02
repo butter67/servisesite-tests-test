@@ -14,6 +14,10 @@ import check from "../icons/check-circle.svg";
 import { Link } from "react-router-dom";
 
 export const PricePlan = () => {
+  const moveToUpacity = () => {
+    window.open("https://app.upacity.jp/", "_blank");
+  };
+
   return (
     <Box py={20} px={5} bg="grayBg" className="mainTarget">
       <Container maxW="980px" p={0}>
@@ -38,7 +42,9 @@ export const PricePlan = () => {
                     </Text>
                   </Flex>
 
-                  <Button size={"sm"}>無料で始める</Button>
+                  <Button size={"sm"} onClick={moveToUpacity}>
+                    無料で始める
+                  </Button>
                 </VStack>
               </Box>
 
@@ -102,7 +108,12 @@ export const PricePlan = () => {
                       /month
                     </Text>
                   </Flex>
-                  <Button size={"sm"} bg={"pointCoral"} fontSize="m">
+                  <Button
+                    size={"sm"}
+                    bg={"pointCoral"}
+                    fontSize="m"
+                    onClick={moveToUpacity}
+                  >
                     利用する
                   </Button>
                 </VStack>
