@@ -98,9 +98,8 @@ export const DrawerMenu = () => {
                           justifyContent="center"
                           py={4}
                           onClick={onClose}
-                          color="#DEC2E8"
                         >
-                          <Link to="/learning-management">ベーシック機能</Link>
+                          <Link to="/learning-management">学習管理機能</Link>
                         </WrapItem>
                       </Wrap>
                       <Wrap>
@@ -109,9 +108,10 @@ export const DrawerMenu = () => {
                           justifyContent="center"
                           py={4}
                           onClick={onClose}
-                          color="#DEC2E8"
                         >
-                          <Link to="/learning-roadmap">ロードマップ機能</Link>
+                          <Link to="/learning-roadmap">
+                            ロードマップ作成機能
+                          </Link>
                         </WrapItem>
                       </Wrap>
                     </AccordionPanel>
