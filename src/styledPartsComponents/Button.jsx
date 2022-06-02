@@ -70,6 +70,10 @@ export const Button = {
       bg: "#4365DD",
       color: "white",
     },
+    pointOrange: {
+      bg: "#FFAC0A",
+      color: "white",
+    },
   },
   // The default size and variant values
   defaultProps: {

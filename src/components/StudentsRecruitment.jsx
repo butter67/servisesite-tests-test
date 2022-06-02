@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import axios from "axios";
 import { Box, Flex, Button, Text } from "@chakra-ui/react";
+import bgImage from "../imgs/mentor-scholarship-page/bgPicture.png";
 
 export const StudentsRecruitment = () => {
   const [data, setData] = useState();
@@ -50,7 +51,10 @@ export const StudentsRecruitment = () => {
   return (
     <Box
       w="100%"
-      bg="navy"
+      bgImage={bgImage}
+      backgroundPosition="center"
+      backgroundRepeat="no-repeat"
+      bgSize="cover"
       py={{ base: "14", md: "20" }}
       px={5}
       className="boshuSection"
@@ -61,12 +65,12 @@ export const StudentsRecruitment = () => {
           fontSize={{ base: "30px", md: "52px" }}
           fontFamily={"pop"}
           mb="0px"
-          color="#fff"
+          color="#113366"
           className="textTarget"
         >
           Mentor ・ Scholarship
         </Text>
-        <Text color="#fcfcfc" className="textTarget">
+        <Text color="#113366" className="textTarget">
           メンター・スカラーシッププラン
         </Text>
 
@@ -76,7 +80,7 @@ export const StudentsRecruitment = () => {
           justifyContent="center"
           fontWeight="600"
           fontFamily={"pop"}
-          color="#FFE9B1"
+          color="#0B0742"
           className="textTarget"
         >
           <Text>{data && data[0].turn}</Text>
@@ -101,14 +105,14 @@ export const StudentsRecruitment = () => {
           <Text color="red" mr="10px">
             *
           </Text>
-          <Text color="#EDF0FF" fontSize={{ base: "14px", md: "16px" }}>
+          <Text color="#FF403D" fontSize={{ base: "14px", md: "16px" }}>
             {data && data[0].turn} {data && data[0].recruitstartyear}.
             {data && data[0].recruitstartmonth}-{data && data[0].recruitendyear}
             .{data && data[0].recruitendmonth}
           </Text>
         </Flex>
         <Button
-          variant={"orange"}
+          variant={"pointOrange"}
           fontSize="20px"
           mt="40px"
           fontWeight="600"
