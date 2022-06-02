@@ -180,7 +180,7 @@ export const HeaderNav = () => {
           Start App
         </Button>
         <Button
-          // size={"s"}
+          size={"s"}
           display={{ base: "block", md: "none" }}
           variant={"orange"}
           fontSize="14px"
