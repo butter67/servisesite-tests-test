@@ -30,6 +30,7 @@ import Unity from "../imgs/leaning-roadmap-page/unity_logo_icon_144772.png";
 import Bash from "../imgs/leaning-roadmap-page/bash.png";
 import Qa from "../imgs/leaning-roadmap-page/qa-icon.png";
 import Flutter from "../imgs/leaning-roadmap-page/flutter.png";
+import MovieBg from "../imgs/leaning-roadmap-page/kaihatuchu-image.png";
 
 export const LeaningRoadMap = () => {
   useEffect(() => {
@@ -447,21 +448,41 @@ export const LeaningRoadMap = () => {
             最適なオリジナルロードマップが自動生成されます。
           </Text>
 
-          <Box
-            className="roadmap-movie-container"
-            pos="relative"
-            maxW="780px"
-            mx="auto"
-          >
-            {/* <Box
+          <Box maxW="780px" mx="auto">
+            <Box
+              className="roadmap-movie-container"
+              pos="relative"
+              w="100%"
+              mx="auto"
+              h="100%"
+              pb="76%"
               bgImage={MovieBg}
               backgroundPosition="center"
               backgroundRepeat="no-repeat"
               bgSize="cover"
-              pb="0%"
+            >
+              {/* <Image src={MovieBg} /> */}
+              {/* <Box
+              bgImage={MovieBg}
+              backgroundPosition="center"
+              backgroundRepeat="no-repeat"
+              bgSize="cover"
+              pb="70%"
               borderRadius="20px"
             > */}
-            <AspectRatio maxW="700px" ratio={4 / 3} mx="auto">
+              {/* <Box>
+                <Text
+                  fontSize={{ base: "18px", md: "24px" }}
+                  color="gray.600"
+                  pos="absolute"
+                  top={{ base: "calc(50% - 13.5px)", md: "calc(50% - 18px)" }}
+                  left={{ base: "calc(50% - 63px)", md: "calc(50% - 84px)" }}
+                >
+                  ただいま開発中
+                </Text>
+              </Box> */}
+
+              {/* <AspectRatio maxW="700px" ratio={4 / 3} mx="auto">
               <iframe
                 src="https://www.youtube.com/embed/n61ULEU7CO0"
                 title="YouTube video player"
@@ -469,8 +490,9 @@ export const LeaningRoadMap = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-            </AspectRatio>
-            {/* </Box> */}
+            </AspectRatio> */}
+              {/* </Box> */}
+            </Box>
           </Box>
         </Container>
       </Box>

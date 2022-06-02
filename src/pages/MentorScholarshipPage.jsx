@@ -289,7 +289,7 @@ export const MentorScholarshipPage = () => {
         </Flex>
       </Box>
 
-      <MentorPlanUserInterview />
+      {/* <MentorPlanUserInterview /> */}
 
       <Box
         className="PriceAndRulesSection"

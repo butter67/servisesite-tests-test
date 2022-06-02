@@ -8,7 +8,7 @@ export const Footer = () => {
       bottom="0"
       w="100%"
       bg="bl"
-      pb={{ base: "30px", md: "0px" }}
+      pb={{ base: "30px", md: "0px", lg: "3px" }}
     >
       <Flex
         color={"white"}
@@ -18,10 +18,6 @@ export const Footer = () => {
         flexDir={{ base: "column", lg: "row" }}
         className="footerFlex"
         w={{ base: "100%", lg: "80%" }}
-
-        // pos="absolute"
-        // bottom="0"
-        // w="100%"
       >
         <Wrap
           w={{ base: "100%", md: "60%" }}
@@ -47,11 +43,12 @@ export const Footer = () => {
             </NavLink>
           </WrapItem>
 
-          <WrapItem>
+          {/* 準備中 */}
+          {/* <WrapItem>
             <NavLink to="/userinterview">
               <Text>事例</Text>
             </NavLink>
-          </WrapItem>
+          </WrapItem> */}
 
           <WrapItem>
             <NavLink to="/price-plan">

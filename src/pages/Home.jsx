@@ -12,7 +12,7 @@ import { BasicFunctions } from "../components/BasicFunctions";
 import { MentorScholarshipPlan } from "../components/MentorScholarshipPlan";
 
 export const Home = (props) => {
-  const postsData = props.posts;
+  // const postsData = props.posts;
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -24,7 +24,7 @@ export const Home = (props) => {
         <BasicFunctions />
         <CustomRoadMapPlan />
         <MentorScholarshipPlan />
-        <UserInterview props={postsData} />
+        {/* <UserInterview props={postsData} /> */}
         <PricePlan />
         <WeSupportYou />
       </Box>

@@ -14,17 +14,12 @@ import {
 } from "@chakra-ui/react";
 import { memo } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import LogoImage from "../icons/Logo-clock.png";
 
 import { DrawerMenu } from "../components/DrawerMenu";
 
 export const HeaderNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const moveToCompanySite = () => {
-    window.open("https://upacity.jp/", "_blank");
-    onClose();
-  };
 
   const moveToUpacity = () => {
     window.open("https://app.upacity.jp/", "_blank");
@@ -78,11 +73,6 @@ export const HeaderNav = () => {
                 onMouseLeave={onClose}
               >
                 機能
-                {/* {isOpen ? (
-                  <ChevronUpIcon w="24px" pl="3px" />
-                ) : (
-                  <ChevronDownIcon w="24px" pl="3px" />
-                )} */}
               </MenuButton>
               <MenuList
                 onMouseEnter={onOpen}
@@ -138,6 +128,8 @@ export const HeaderNav = () => {
             </Link>
           </WrapItem>
 
+          {/* 開発中 */}
+          {/* 
           <WrapItem
             transition="all 0.3s"
             _hover={{
@@ -149,7 +141,7 @@ export const HeaderNav = () => {
             <NavLink to="/userinterview">
               <Text>事例</Text>
             </NavLink>
-          </WrapItem>
+          </WrapItem> */}
 
           <WrapItem
             className="navHover"
@@ -190,11 +182,12 @@ export const HeaderNav = () => {
         <Button
           size={"s"}
           display={{ base: "block", md: "none" }}
-          // w={{ base: "100px" }}
-          // h={{ base: "35px" }}
           variant={"orange"}
           fontSize={{ base: "14px" }}
           onClick={moveToUpacity}
+          _focus={{
+            outline: "none",
+          }}
         >
           Start App
         </Button>

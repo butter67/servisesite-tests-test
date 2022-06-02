@@ -62,7 +62,7 @@ export const StudentsRecruitment = () => {
     >
       <Box color="white" fontFamily={"pop"}>
         <Text
-          fontSize={{ base: "30px", md: "52px" }}
+          fontSize={{ base: "30px", md: "38px", lg: "52px" }}
           fontFamily={"pop"}
           mb="0px"
           color="#113366"
@@ -75,7 +75,7 @@ export const StudentsRecruitment = () => {
         </Text>
 
         <Flex
-          fontSize={{ base: "16px", md: "38px" }}
+          fontSize={{ base: "16px", md: "26px", lg: "38px" }}
           mt="30px"
           justifyContent="center"
           fontWeight="600"
@@ -96,7 +96,9 @@ export const StudentsRecruitment = () => {
           </Text>
           <Text>募集開始</Text>
         </Flex>
-        <Flex
+
+        {/* 第一期生表示中の間は非表示対応 */}
+        {/* <Flex
           justifyContent="center"
           flexDir="row"
           mt="20px"
@@ -110,13 +112,19 @@ export const StudentsRecruitment = () => {
             {data && data[0].recruitstartmonth}-{data && data[0].recruitendyear}
             .{data && data[0].recruitendmonth}
           </Text>
-        </Flex>
+        </Flex> */}
         <Button
           variant={"pointOrange"}
           fontSize="20px"
           mt="40px"
           fontWeight="600"
           className="buttonTarget"
+          _hover={{
+            cursor: "pointer",
+          }}
+          _focus={{
+            outline: "none",
+          }}
         >
           申し込む
         </Button>

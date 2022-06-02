@@ -117,29 +117,9 @@ export const DrawerMenu = () => {
                     </AccordionPanel>
                   </AccordionItem>
                 </Accordion>
-                {/* <Text>Accodion</Text> */}
               </WrapItem>
             </Wrap>
-            {/* <Wrap>
-              <WrapItem
-                w="100%"
-                justifyContent="center"
-                py={4}
-                onClick={onClose}
-              >
-                <Link to="/learning-management">ベーシック機能</Link>
-              </WrapItem>
-            </Wrap>
-            <Wrap>
-              <WrapItem
-                w="100%"
-                justifyContent="center"
-                py={4}
-                onClick={onClose}
-              >
-                <Link to="/learning-roadmap">ロードマップ機能</Link>
-              </WrapItem>
-            </Wrap> */}
+
             <Wrap>
               <WrapItem
                 w="100%"
