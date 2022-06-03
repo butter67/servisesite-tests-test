@@ -294,7 +294,8 @@ export const MentorScholarshipPage = () => {
 
       <Box
         className="PriceAndRulesSection"
-        py={{ base: "10", md: "20" }}
+        pt={{ base: "10", md: "20" }}
+        pb={{ base: "20", md: "20" }}
         px="5"
         bg="grayBg"
       >
@@ -379,10 +380,7 @@ export const MentorScholarshipPage = () => {
                     <Image src={DoubleCircleIcon} mt="2px" mr="14px" />
                     <Text>他受講生が困っていたら助けること</Text>
                   </WrapItem>
-                  <WrapItem alignItems={"center"}>
-                    <Image src={DoubleCircleIcon} mt="2px" mr="14px" />
-                    <Text>学習報告はTwitterで行うこと(Upacityに機能あり)</Text>
-                  </WrapItem>
+
                   <WrapItem alignItems={"center"}>
                     <Image src={DoubleCircleIcon} mt="2px" mr="14px" />
                     <Text>上記守れない場合は退学をすること</Text>

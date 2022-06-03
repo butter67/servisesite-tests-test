@@ -1,6 +1,5 @@
 import { gsap } from "gsap";
-import { useCallback, useEffect, useRef, memo } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect, useRef, memo } from "react";
 import {
   Box,
   Flex,
@@ -171,9 +170,9 @@ export const HeroMain = memo(() => {
           >
             ロードマップ作成と
             <br className="brDisplay" />
-            時間管理を助ける
+            勉強管理を助ける
             <br />
-            専門職のための学習ツール
+            学習サポートツールです。
           </Heading>
 
           <Text
@@ -185,7 +184,7 @@ export const HeroMain = memo(() => {
             <br diaplay={{ base: "block", md: "non" }} />
             復習をサポート。
             <br />
-            スクラムボードで学習管理をしよう！
+            その勉強、スクラムボードでやりませんか？
           </Text>
         </VStack>
 
