@@ -3,18 +3,18 @@
   "name": "学習ロードマップサービス | Upacity",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "favicon1.ico",
       "sizes": "48x48",
       "type": "image/x-icon"
     },
     {
-      "src": "favicon.png",
-      "type": "image/png",
+      "src": "favicon1.ico",
+      "type": "image/x-icon",
       "sizes": "48x48"
     },
     {
-      "src": "favicon.png",
-      "type": "image/png",
+      "src": "favicon1.ico",
+      "type": "image/x-icon",
       "sizes": "48x48"
     }
   ],
